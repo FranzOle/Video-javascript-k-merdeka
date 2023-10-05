@@ -1,17 +1,9 @@
-//Function atau Fungsi
-function Fungsi (){
-    console.log("Ini fungsi");
-}
+//video 3 dom html js
+document.querySelector("div").innerHTML = "lorem ipsum dolor sit amir";
+// menggunakan document.getelement method
+document.getElementById("tes").innerText = "Tes";
 
-//Fungsi dengan nilai kembalian
-function FungsiReturn(){
-    return "aku belajar function";
-}
-//Fungsi dengan Parameter
-function Luas (sisi){
-    return sisi * sisi;
-}
-Fungsi();
-console.log(FungsiReturn())
-console.log(Luas(23));
+function Fungsi(){
+    document.querySelector("#tes").innerText = "Berubah";
+} 
 
