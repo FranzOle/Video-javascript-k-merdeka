@@ -1,15 +1,10 @@
-//video 5 QuerySelectorall
+//video 6 DOM form 
 
-par.onclick = () => {
-    //memeriksa array img
-    console.log(document.querySelectorAll('img'));
-     //fungsi querySelctorAll adalah untuk menunjuk semua elemen img membentuk sebuah array 
-    //membuat random
-    min = Math.ceil(0);
-    max = Math.floor(2);
+var tampil = document.getElementById('tampil');
 
-    let n = Math.floor(Math.random()* (max - min +1));
-    console.log(n);
-    document.querySelectorAll('img')[n].style.visibility = 'visible';
-};
-
+tampil.onclick = () => {
+    alert('Nama Anda : ' + document.querySelector('#inputNama').value);
+    // '.value' untukmenngambil input ddari html nya denganbenar 
+    document.querySelector('#tempelNama').value = document.querySelector('#inputNama').value;
+    document.querySelector('#para').textContent = document.querySelector('#inputNama').value;
+}
